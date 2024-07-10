@@ -1,0 +1,164 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.header .container {
+    background: url(/assets/images/bg-header.jpg) no-repeat center top;
+    background-size: contain;
+}
+
+.header__top {
+    padding: 14px 0 12px;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid rgba(0,0,0,.07);
+}
+
+.header__top ul {
+    display: flex;
+    align-items: center;
+}
+
+.header__top ul li a {
+    display: block;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #686a78;
+    margin-left: 25px;
+}
+
+.header__logo {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__logo-avt {
+    width: 110px;
+    display: block;
+    margin-right: 20px;
+}
+
+.header__lcontent .text {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 17px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #343d49;
+    margin-bottom: 4px;
+}
+
+.header__lcontent .name {
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36.3971px;
+    line-height: 46px;
+    text-align: center;
+    color: #e40913;
+    margin-bottom: 4px;
+    margin-top: 0;
+}
+
+.header__laction {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: #182940;
+}
+
+#content {
+    overflow: hidden;
+}
+
+#calendar {
+    margin-top: 15px;
+    /* background: url(/assets/images/bg.png) no-repeat top center; */
+    background-size: cover;
+    height: calc(100vh - 200px);
+}
+
+.calendar-block {
+    width: calc(100vw - 60px);
+    margin: auto;
+}
+
+.table-header {
+    padding-top: 15px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    margin: auto;
+}
+
+.table-header h2 {
+    font-size: 36px;
+    margin: unset;
+    padding: 15px;
+    background: red;
+    color: yellow;
+}
+
+.swiper-container {
+    height: 100%;
+    /* padding: 0 60px 60px 120px; */
+    width: 100%;
+}
+
+#calendar .swiper-slide {
+    visibility: hidden;
+}
+
+#calendar .swiper-slide.swiper-slide-active {
+    visibility: visible;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+table {
+    width: 100%;
+    background: unset;
+    border-collapse: collapse;
+}
+th, td {
+    background: unset;
+    border: 3px solid #0b00a3;
+    padding: 8px;
+    font-size: 36px;
+}
+th {
+    background: unset;
+}
