@@ -107,14 +107,19 @@ body {
     text-align: center;
     text-transform: uppercase;
     margin: auto;
+    background: red;
+    color: yellow;
+    padding: 15px;
 }
 
 .table-header h2 {
     font-size: 36px;
     margin: unset;
-    padding: 15px;
-    background: red;
-    color: yellow;
+}
+
+.table-header .time {
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .swiper-container {
