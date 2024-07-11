@@ -16,6 +16,10 @@ body {
     background-size: contain;
 }
 
+.header__h1 {
+    margin: 10px 0;
+}
+
 .header__top {
     padding: 14px 0 12px;
     display: flex;
@@ -93,7 +97,7 @@ body {
     margin-top: 15px;
     /* background: url(/assets/images/bg.png) no-repeat top center; */
     background-size: cover;
-    height: calc(100vh - 200px);
+    height: calc(100vh - 230px);
 }
 
 .calendar-block {
@@ -163,8 +167,18 @@ th, td {
     border: 3px solid #0b00a3;
     padding: 8px;
     font-size: 36px;
-    line-height: 52px;
+    line-height: 46px;
 }
 th {
     background: unset;
+}
+
+footer {
+    text-align: right;
+}
+
+footer img {
+    width: 190px;
+    margin-right: 30px;
+    margin-top: -15px;
 }
