@@ -132,11 +132,20 @@ body {
     width: 100%;
 }
 
-#calendar .swiper-slide {
+/* #calendar .swiper-slide {
     visibility: hidden;
 }
 
 #calendar .swiper-slide.swiper-slide-active {
+    visibility: visible;
+} */
+
+
+#calendar .swiper-slide {
+    visibility: hidden;
+}
+
+#calendar .swiper-slide.active {
     visibility: visible;
 }
 

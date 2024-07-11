@@ -52,8 +52,47 @@
         <img src="/assets/images/logo-ath.png" alt="ATH Logo">
     </footer>
     <script src="/assets/js/api.js"></script>
-    <script src="/assets/js/swiper-bundle.min.js"></script>
+    <!-- <script src="/assets/js/swiper-bundle.min.js"></script> -->
     <script src="/assets/js/script.js" ></script>
 
+    <script type="text/javascript">
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            const slides = document.querySelector('#swiper-wrapper');
+            const totalSlides = slides.children.length;
+
+            if (index >= totalSlides) {
+                currentIndex = 0;
+            } else if (index < 0) {
+                currentIndex = totalSlides - 1;
+            } else {
+                currentIndex = index;
+            }
+
+            // slides[currentIndex]
+
+            // Remove 'active' class from all slides
+            for (let i = 0; i < totalSlides; i++) {
+                slides.children[i].classList.remove('active');
+            }
+
+            // Add 'active' class to the current slide
+            slides.children[currentIndex].classList.add('active');
+
+            slides.style.transform = `translateX(${-currentIndex * 100}%)`;
+        }
+
+        function nextSlide() {
+            showSlide(currentIndex + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentIndex - 1);
+        }
+
+        // Automatically move to the next slide every 3 seconds
+        setInterval(nextSlide, 5000);
+    </script>
 </body>
 </html>
