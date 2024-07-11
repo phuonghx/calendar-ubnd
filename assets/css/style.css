@@ -173,10 +173,6 @@ table {
     border-collapse: collapse;
 }
 
-tr > th {
-    color: #020202;
-}
-
 th, td {
     background: unset;
     border: 3px solid #0b00a3;
