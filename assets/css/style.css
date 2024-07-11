@@ -1,5 +1,5 @@
 * {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
 body {
@@ -34,7 +34,7 @@ body {
 
 .header__top ul li a {
     display: block;
-    font-family: Inter;
+    /* font-family: Inter; */
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -57,7 +57,7 @@ body {
 }
 
 .header__lcontent .text {
-    font-family: Inter;
+    /* font-family: Inter; */
     font-style: normal;
     font-weight: 600;
     font-size: 28px;
@@ -81,7 +81,7 @@ body {
 }
 
 .header__laction {
-    font-family: Inter;
+    /* font-family: Inter; */
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -173,12 +173,22 @@ table {
     border-collapse: collapse;
 }
 
+tr > th {
+    text-align: center
+}
+
+tr > td:first-child {
+    text-align: center
+}
+
 th, td {
     background: unset;
     border: 3px solid #0b00a3;
     padding: 8px;
     font-size: 30px;
     line-height: 46px;
+    text-align: left;
+    font-weight: bold;
 }
 th {
     background: unset;
