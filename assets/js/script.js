@@ -20,7 +20,7 @@ function initClient() {
             // Split the data into chunks and create tables
             const header = data[0]; // Keep the header separate
             const rows = data.slice(1); // All rows except the header
-            const chunkedRows = chunkArray(rows, 3);
+            const chunkedRows = chunkArray(rows, 5);
 
             chunkedRows.forEach(chunk => {
                 const tableData = [header, ...chunk]; // Add the header to each chunk
