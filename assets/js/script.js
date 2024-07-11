@@ -34,7 +34,7 @@ function initClient() {
             });
 
 
-            initSwiper();
+            // initSwiper();
         } else {
             console.log('Không có dữ liệu.');
         }
