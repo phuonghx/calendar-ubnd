@@ -20,7 +20,7 @@
                 <div class="header__logo">
                         <h1 class="header__h1">
                             <a href="/" class="header__logo-avt" title="">
-                                <img style="width: 120px;" src="/assets/images/logo-top.jpg" alt="Quốc Huy">
+                                <img style="width: 180px;" src="/assets/images/logo-top.jpg" alt="Quốc Huy">
                             </a>
                         </h1>
                     <div class="header__lcontent">
@@ -41,9 +41,6 @@
                 <div class="swiper-container">
                     <div class="swiper-wrapper" id="swiper-wrapper">
                     </div>
-                    <!-- <div class="swiper-pagination"></div> -->
-                    <!-- <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div> -->
                 </div>
             </div>
         </div>
@@ -52,7 +49,6 @@
         <img src="/assets/images/logo-ath.png" alt="ATH Logo">
     </footer>
     <script src="/assets/js/api.js"></script>
-    <!-- <script src="/assets/js/swiper-bundle.min.js"></script> -->
     <script src="/assets/js/script.js" ></script>
 
     <script type="text/javascript">
@@ -70,8 +66,6 @@
                 currentIndex = index;
             }
 
-            // slides[currentIndex]
-
             // Remove 'active' class from all slides
             for (let i = 0; i < totalSlides; i++) {
                 slides.children[i].classList.remove('active');
@@ -83,15 +77,18 @@
             slides.style.transform = `translateX(${-currentIndex * 100}%)`;
         }
 
+        // showSlide(0);
+
         function nextSlide() {
-            showSlide(currentIndex + 1);
+            showSlide(currentIndex);
+            currentIndex++;
         }
 
         function prevSlide() {
             showSlide(currentIndex - 1);
         }
 
-        // Automatically move to the next slide every 3 seconds
+        // Automatically move to the next slide every 5 seconds
         setInterval(nextSlide, 5000);
     </script>
 </body>
